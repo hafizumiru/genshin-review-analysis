@@ -17,7 +17,7 @@ This project analyzes user reviews of the mobile game **Genshin Impact** on Goog
 ## 📁 Dataset
 
 - Source: [Google Play Store Scraped Data]
-- Total Reviews: ~216,000
+- Total Reviews: ~1285
 - Filtered Version: **App Version 5.5**
 - Key Columns:
   - `content` - User review text
