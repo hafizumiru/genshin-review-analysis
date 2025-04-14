@@ -1,24 +1,22 @@
 # Genshin Review Analysis
 
 📊 **Project Overview**
-This project analyzes user reviews of the mobile game **Genshin Impact** on Google Play Store, with a specific focus on reviews submitted for **App Version 5.5** — the most recent release at the time of analysis.
+Proyek ini dilakukan untuk menganalisis ulasan pengguna terkait tingkat kepuasan mereka terhadap game **Genshin Impact**, serta untuk mengidentifikasi faktor-faktor yang menyebabkan ketidakpuasan. Fokus analisis ini adalah pada ulasan yang diberikan untuk tiga pembaruan patch terakhir, yaitu versi **5.5, 5.4, dan 5.3**. Untuk mengidentifikasi masalah yang sering dihadapi pengguna, digunakan dua metode analisis teks, yaitu word cloud dan word frequency analysis.
 
 ---
 
 ## 🎯 Objectives
 
-- Understand the **perception of users** towards Genshin Impact version 5.5.
-- Identify **recurring themes**, feedback, and pain points from user reviews.
-- Perform **sentiment analysis** on textual reviews.
-- Visualize rating distribution and observe trends.
+- Menganalisis **tingkat kepuasan pengguna** terhadap game **Genshin Impact** berdasarkan ulasan untuk tiga versi pembaruan terakhir (5.5, 5.4, dan 5.3).
+- Mengidentifikasi **faktor-faktor ketidakpuasan** dan **tema-tema yang sering muncul** dalam ulasan pengguna terkait pembaruan terbaru.
+- Menggunakan **word cloud** dan **word frequency analysis** untuk memvisualisasikan dan mengukur kata-kata atau masalah yang paling sering dibicarakan dalam ulasan.
+- Menilai **tren umpan balik** pengguna terkait setiap versi pembaruan dan mengamati pola kepuasan atau ketidakpuasan yang muncul.
 
 ---
 
 ## 📁 Dataset
 
 - Source: [Google Play Store Scraped Data]
-- Total Reviews: ~1285
-- Filtered Version: **App Version 5.5**
 - Key Columns:
   - `content` - User review text
   - `score` - Rating from 1 to 5
@@ -26,19 +24,3 @@ This project analyzes user reviews of the mobile game **Genshin Impact** on Goog
   - `appVersion` - Version of the app reviewed
 
 ---
-
-## 🔧 Preprocessing Steps
-
-- Drop irrelevant columns (e.g., `userImage`, `replyContent`, `repliedAt`)
-- Handle missing values and format dates
-- Clean text data (lowercasing, punctuation removal, stopwords)
-- Filter only reviews with `appVersion == 5.5`
-
----
-
-## 🔍 Analysis Highlights
-
-- 📈 Rating Distribution for v5.5
-- 🧠 Word Frequency in Positive vs Negative Reviews
-- 💬 Sentiment Polarity
-- ⏳ Review Trend over Time (within v5.5 lifecycle)
